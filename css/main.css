@@ -1,7 +1,7 @@
 <style>
 h1{font-family: 'Sansita', sans-serif;}
 h2{font-family: 'Sansita', sans-serif;}
-body{background-image: url("fondo.png"); background-repeat: no-repeat;
+body{background-image: url("../images/fondo.png"); background-repeat: no-repeat;
       background-size:100% 100%;}
 IMG.imgcenter{
           display: block;
