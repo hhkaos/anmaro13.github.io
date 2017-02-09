@@ -7,12 +7,15 @@
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+              data-dojo-config="async: true"
+      ></script>
 </head>
 <body>
   <h1>Andrea Martín Rodríguez</h1>
   <img src="images/foto.png" alt="foto perfil" width="150" height="150" id ="fotoinicio" class="imgcenter" >
   <p></p>
+
   <ul id="menu">
     <li><a href="#experiencia">Experiencia profesional</a></li>
     <li><a href="#habilidades">Habilidades y conocimientos</a></li>
@@ -24,8 +27,25 @@
 <p></p>
   <hr>
 
-  <h2 id= "experiencia">Experiencia Profesional</h2>
+  <button id="fadeOutButton">Desaparece</button>
+    <button id="fadeInButton">Aparece</button>
 
+
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="async: true, isDebug: true"></script>
+   <script>
+       require(["dojo/_base/fx", "dojo/on", "dojo/dom", "dojo/domReady!"], function(fx, on, dom) {
+           var fadeOutButton = dom.byId("fadeOutButton"),
+                   fadeInButton = dom.byId("fadeInButton"),
+                   fadeTarget = dom.byId("fotoinicio");
+
+           on(fadeOutButton, "click", function(evt){
+               fx.fadeOut({ node: fadeTarget }).play();
+           });
+           on(fadeInButton, "click", function(evt){
+               fx.fadeIn({ node: fadeTarget }).play();
+           });
+       });
+   </script>`
   <table>
      <tr>
             <th><strong>Empresa</strong></th>
@@ -35,7 +55,8 @@
 
      </tr>
      <tr>
-         <td><img src="images/talher.jpg" alt="talher" width="150" height="50"/></td>
+         <td><img src="images/talher.jpg" alt="talher" width="150" height="50"/>
+         </td>
          <td>Becario &nbsp;&nbsp;&nbsp;</td>
          <td>Apoyo técnico en la realización de Licitaciones de Servicios de Jardinería y Limpieza Viaria &nbsp;&nbsp;&nbsp;</td>
          <td>2014/2015 &nbsp;&nbsp;&nbsp;</td>
@@ -134,8 +155,7 @@
 <p>
   <a href="Formulario.html">Formulario de Opinión:</a>
 </p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+
 
 </body>
 </html>
