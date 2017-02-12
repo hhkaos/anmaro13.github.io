@@ -1,0 +1,49 @@
+<style>
+h1{font-family: 'Sansita', sans-serif;}
+h2{font-family: 'Sansita', sans-serif;}
+body{background-image: url("../images/fondo.png"); background-repeat: no-repeat;
+      background-size:100% 100%;}
+IMG.imgcenter{
+          display: block;
+          margin-left: auto;
+          margin-right: 3px;
+          border: black 3px solid;
+          }
+hr {clear: both;}
+ul {float: left;}
+img {float: left;}
+
+table{text-align: center;}
+td {border: black 1px solid;}
+th {border: black 2px solid;}
+.clicked{font-family: 'Barrio', cursive;}
+.box {
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				background-color: #ddd;
+				border: 1px #eee;
+				padding: 5px;
+			}
+			.innerBox {
+				margin: 5%;
+				padding: 5px;
+				background-color: white;
+			}
+			#container {
+				position: relative;
+				padding: 10px;
+				height: 300px;
+				width: 450px;
+			}
+			.contentBox {
+				background-color: white;
+				position: absolute;
+				width: 200px;
+				border: solid 1px #99c;
+				margin: 5px;
+				-moz-box-shadow: 10px 10px 5px #888;
+				-webkit-box-shadow: 2px 3px 5px #888;
+				box-shadow: 10px 10px 5px #888;
+			}
+</style>
