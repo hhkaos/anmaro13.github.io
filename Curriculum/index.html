@@ -1,141 +1,665 @@
 <!DOCTYPE html>
-<html lang="es">
+<!--
+    ____  _                            _     ________
+   / __ )(_)__  ____ _   _____  ____  (_)___/ / ____ \
+  / __  / / _ \/ __ \ | / / _ \/ __ \/ / __  / / __ `/
+ / /_/ / /  __/ / / / |/ /  __/ / / / / /_/ / / /_/ /
+/_____/_/\___/_/ /_/|___/\___/_/ /_/_/\__,_/\ \__,_/
+                                             \____/
+-->
+<html lang="en">
 <head>
+  <!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
-  <meta charset="UTF-8">
-  <title>Curriculum</title>
-  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  
+  <!-- Favicons
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrea Martín Rodríguez - GIS Technician</title>
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+	 <link href="https://esri.github.io/calcite-bootstrap/assets/css/calcite-bootstrap-open.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/default.css">
+	 <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+   <link href="css/splash.css" rel="stylesheet">
+	 <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/splash.js"></script>
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
 </head>
-<body>
-  <h1>Andrea Martín Rodríguez</h1>
-  <img src="images/foto.png" alt="foto perfil" width="150" height="150" id ="fotoinicio" class="imgcenter" >
-  <p></p>
-  <ul id="menu">
-    <li><a href="#experiencia">Experiencia profesional</a></li>
-    <li><a href="#habilidades">Habilidades y conocimientos</a></li>
-    <li><a href="#educacion">Educación</a></li>
-    <li><a href="#idiomas">Idiomas</a></li>
-    <li><a href="#datos">Datos de interés</a></li>
-    <li><a href="#contactar">Contactar</a></li>
-  </ul>
-<p></p>
-  <hr>
 
-  <h2 id= "experiencia">Experiencia Profesional</h2>
+<body onload="splash.startSplash()">
 
-  <table>
-     <tr>
-            <th><strong>Empresa</strong></th>
-            <th><strong>Puesto de Trabajo</strong></th>
-            <th><strong>Funciones Desarrolladas</strong></th>
-            <th><strong>Desde/Hasta</strong></th>
+  <div class="loader-container" id="page-loader">
+    <div class="loading-wrapper">
+      <div class="loader-animation" id="loader-animation">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
 
-     </tr>
-     <tr>
-         <td><img src="images/talher.jpg" alt="talher" width="150" height="50"/></td>
-         <td>Becario &nbsp;&nbsp;&nbsp;</td>
-         <td>Apoyo técnico en la realización de Licitaciones de Servicios de Jardinería y Limpieza Viaria &nbsp;&nbsp;&nbsp;</td>
-         <td>2014/2015 &nbsp;&nbsp;&nbsp;</td>
-     </tr>
-     <tr>
-         <td><img src="images/valoriza.jpg" alt="valoriza" width="100" height="100"/></td>
-         <td>Becario &nbsp;&nbsp;&nbsp;</td>
-         <td>Inspecciones de calidad en las zonas verdes de Madrid &nbsp;&nbsp;&nbsp;</td>
-         <td>2015/2016 &nbsp;&nbsp;&nbsp;</td>
-     </tr>
-     <tr>
-         <td><img src="images/tragsatec.jpg" alt="tragsatec" width="150" height="80"/></td>
-         <td>Técnico GIS &nbsp;&nbsp;&nbsp;</td>
-         <td>Apoyo técnico mediante el uso de la tecnología GIS &nbsp;&nbsp;&nbsp;</td>
-         <td>2016/Actual &nbsp;&nbsp;&nbsp;</td>
-     </tr>
-   </table>
-     <hr>
- <h2 id= "habilidades">Habilidades y Conocimientos</h2>
-<p></p>
-  <ol>
-    <li><strong>Sistemas de Información Geográfica.&nbsp;</strong> Plataformas ArcGIS (ESRI), GvSIG, QGIS</li>
-    <li><strong>Inventarios de campo.&nbsp;</strong>Realización de inventarios de campo de mobiliriario urbano y arbolado viario</li>
-    <li><strong>Gestión y Mantenimiento de Bases de Datos.&nbsp;</strong>Mantenimiento de Bases de Datos: Oracle, SQL Server, PostgradeSQL</li>
-    <li><strong>Calidad.&nbsp;</strong>Realización de inspecciones de calidad en zonas verdes urbanas </li>
-    <li><strong>Evaluación de Impacto Ambiental.&nbsp;</strong></li>
-  </ol>
-<p></p>
-<hr>
-<h2 id= "educacion">Educación</h2>
-<p></p>
-<table>
+      <div class="loader-name" id="loader-name">
+      Andrea <strong>Martín Rodríguez</strong>
+    </div>
 
-<tr>
-       <th><strong>Título</strong></th>
-       <th><strong>Universidad/Organización</strong></th>
-       <th><strong>Desde/Hasta</strong></th>
+    <p class="loader-job" id="loader-job">GIS Technician</p>
 
-</tr>
-<tr>
-    <td>Grado en Ingeniería del Medio Natural &nbsp;&nbsp;&nbsp;</td>
-    <td>Universidad Politécnica de Madrid &nbsp;&nbsp;&nbsp;</td>
-    <td>2011/2015 &nbsp;&nbsp;&nbsp;</td>
-</tr>
-<tr>
-    <td>Master en Sistemas de Información Geográfica &nbsp;&nbsp;&nbsp;</td>
-    <td>ESRI &nbsp;&nbsp;&nbsp;</td>
-    <td>2016/Actual &nbsp;&nbsp;&nbsp;</td>
-</tr>
- </table>
-<hr>
-<h2 id= "idiomas">Idiomas</h2>
-<p></p>
+    </div>
 
-<table>
+  </div>
 
-   <tr>
-          <th><strong>Idioma</strong></th>
-          <th><strong>Nivel</strong></th>
-          <th><strong>Título</strong></th>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-   </tr>
-   <tr>
-       <td>Inglés &nbsp;&nbsp;&nbsp;</td>
-       <td>C1 &nbsp;&nbsp;&nbsp;</td>
-       <td>BULATS.Cambridge Institute &nbsp;&nbsp;&nbsp;</td>
-   </tr>
-   <tr>
-       <td>Alemán &nbsp;&nbsp;&nbsp;</td>
-       <td>A1 &nbsp;&nbsp;&nbsp;</td>
-       <td>Escuela Oficial de Idiomas &nbsp;&nbsp;&nbsp;</td>
-   </tr>
- </table>
-<hr>
-<h2 id= "datos">Datos de interés</h2>
-<p></p>
-<p></p>
-  <ol>
-    <li>Curso de Diseño de Jardines y Sistemas de Diego. Curso de 300h. Universidad Politécnica de Madrid</li>
-    <li>Curso de Evaluacion de Impacto Ambiental. Curso de 125 h. Escuela de Empresas</li>
-    <li>Curso de Restauración de Suelos. Curso de 125h. Escuela de Empresas </li>
-    <li>Título de Monitor de Ocio y Tiempo Libre. Escuela Samakanda</li>
-    <li>Carnet de conducir B </li>
+      <nav id="nav-wrap">
 
-  </ol>
-<p></p>
-<hr>
-<h2 id= "contactar">Contactar</h2>
-<p></p>
-  <ol>
-    <li><strong>Diracción:&nbsp;</strong> </li>
-    <li><strong>Teléfono:&nbsp;</strong></li>
-    <li><strong>Email:&nbsp;</strong></li>
-  </ol>
-<p></p>
-<p>
-  <a href="Formulario.html">Formulario de Opinión:</a>
-</p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+					 <li><a class="smoothscroll" href="#works">Works</a></li>
+            <li><a class="smoothscroll" href="#recommendations">Recommendations</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+			<div class="row banner">
+         <div class="banner-text">
+            <h3>Hello World!</h3>
+            <h1 class="h1-text">I'm Andrea Martín Rodríguez</h1>
+            <h3>I'm a <span>Natural Environmental Engineering</span>, and <span>GIS Professional</span> who loves to create personalized maps with a beatiful design and awesome technologies. Let's <a class="smoothscroll" href="#about">start scrolling </a>
+             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://plus.google.com/u/0/105661020713638173735"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://es.linkedin.com/in/anmaro13"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/anmaro13"><i class="fa fa-github"></i></a></li>
+							 <li><a href="mailto:andrmartinro@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="../img/profile.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About me</h2>
+
+            <p>
+              Natural Environmental Engineer, currently undertaking a master's programme about Geographic Information Systems (GIS) with ESRI Spain.
+              Fascinated about GIS and its many uses for all kind of fields. I want to focus my career on the use of programming
+              (JavaScript, PHP, Python, Java, mySQL) in GIS and Remote Sensing. Self-motivated, resourceful, able to manage
+              multiple tasks and documents simultaneously, and well-organized meeting deadlines, with excellent inter-personal skills.
+              I'm a beginner in Web Design and Development, but I would like to develop my skills on this field, in order to make
+              efficient use of these resources in my future jobs.
+
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Andrea Martín Rodríguez</span><br>
+						   <span>Laurel Street <br>
+						         Madrid, CD 28005 SPAIN
+                     </span><br>
+						   <span>+034 660 692 026 </span><br>
+                     <span>andrmartinro@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="images/RESUME.pdf" class="button" download="RESUME.pdf"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+			<p class="scrolldown">
+         <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+    ----------------------------------------------- -->
+
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>ESRI SPAIN</h3>
+                  <p class="info">Master in Geographic Information Systems (GIS)<span>&bull;</span> <em class="date">October 2016-Present</em></p>
+
+                  <p>
+                  The Master in Geographical Information Systems of Esri allows to form integrally in the Platform ArcGIS,
+									from the use of tools of desktop, to the administration of the platform and generation of applications.
+									It is a programm which offer knowledge on spatial analysis of geographical information systems, advanced Python scripting,
+									cartographic design and visualisation, web mapping, space imagery and processing. It also focus on on the use of programming
+		              (Html5, Css, and JavaScript) in web design and developnment.
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Polytechnic University of Madrid</h3>
+                  <p class="info">Degree in Natural Environmental Engineering.<span>&bull;</span> <em class="date">October 2011- July 2016</em></p>
+
+                  <p>
+										The course provides knowledge on areas such as natural sciences, regional analysis techniques, socioeconomics, infrastructures
+										in the natural environment, species management, detection and correction of environmental impact, and project management.
+										The objective of this course is to train specialists who will be particularly capable of preventing and solving environmental
+										problems in the natural environment; planning, directing and conducting environmental studies and conservation plans for the natural
+										environment; forming part of multidisciplinary teams to prepare environmental impact projects; programming and directing studies on air,
+										soil and water quality; developing technologies for the rational use of the natural environment; and advising organisations, companies and lawmakers.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Tragsatec</h3>
+                  <p class="info">GIS Technician<span>&bull;</span> <em class="date">November 2016 - Present</em></p>
+
+                  <p>
+									Tragsatec forms part of the Tragsa Group and it is a company specialized in providing engineering, consulting
+									and technical assistance in the areas of agriculture, forestry, the environment, rural development or
+									marine environment, both in carrying out studies and projects as well as providing technical services.
+									Part of my job is to provide technical assitance, on projects the company has been involved in, focussed on
+									the implementation of GIS technologies and the management and maintenance of the database (Oracle and SQL Server)
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Valoriza Servicios Medioambientales</h3>
+                  <p class="info">Field Technician <span>&bull;</span> <em class="date">October 2015 - November 2016 </em></p>
+
+                  <p>
+                  Valoriza Servicios Medioambientales forms part of the International project developed
+									by Sacyr Group. It is the parent company in the Environment Division, which manages
+									street cleaning concessions, including gardening, of many public organizations.
+									My job in this company was to conduct daily quality inspections on urban green areas of Madrid.
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>TALHER</h3>
+                  <p class="info">GIS Technician <span>&bull;</span> <em class="date">September 2014 - August 2015 </em></p>
+
+                  <p>
+                  TALHER is a company dedicated to environmental services which forms part of the CLECE Group.
+									Part of my job in this company, was to create cartography included in documents submitted
+									by the company for public or private tenders.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+
+				<div class="bars">
+					<h3 class="section-item-title-2"><i class="fa fa-users"></i>&nbsp;&nbsp; Professional Skills</h3>
+									<ul class="skills-list">
+					                    <!-- item-list -->
+					                    <li>
+					                      <div class="progress">
+					                        <div class="progress-bar" role="progressbar" data-percent="70%" style="width: 70%;">
+					                            <span class="sr-only">70% Complete</span>
+																	</div>
+					                        <span class="progress-type">Comunication</span>
+					                        <span class="progress-completed">70%</span>
+
+					                      </div>
+					                    </li>
+					                    <!-- /item list -->
+															<li>
+					                       <div class="progress">
+					                         <div class="progress-bar progress-bar-2" role="progressbar" data-percent="85%" style="width: 85%;">
+					                             <span class="sr-only">85% Complete</span>
+					                         </div>
+					                         <span class="progress-type">Leadership</span>
+					                         <span class="progress-completed">85%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress" title="Doing my best!">
+					                         <div class="progress-bar progress-bar-3" role="progressbar" data-percent="85%" style="width: 85%;">
+					                             <span class="sr-only">85% Complete</span>
+					                         </div>
+					                         <span class="progress-type">Confidence</span>
+					                         <span class="progress-completed">85%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                 </ul>
+					 				<!-- /Skils List -->
+
+					 				 <!-- Subtitle -->
+					 	          	<h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; GIS Skills</h3>
+					 	          	<!-- /Subtitle -->
+
+					 				<!-- Skils List -->
+					 				<ul class="skills-list">
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress">
+					                         <div class="progress-bar" data-percent="90%" role="progressbar" style="width: 90%;">
+					                             <span class="sr-only">90% Complete</span>
+					                         </div>
+					                         <span class="progress-type">ArcGIS Platforms</span>
+					                         <span class="progress-completed">90%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress">
+					                         <div class="progress-bar progress-bar-2" data-percent="70%" role="progressbar" style="width: 70%;">
+					                             <span class="sr-only">70% Complete</span>
+					                         </div>
+					                         <span class="progress-type">QGIS</span>
+					                         <span class="progress-completed">70%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress">
+					                         <div class="progress-bar progress-bar-3" data-percent="40%" role="progressbar" style="width: 40%;">
+					                             <span class="sr-only">40% Complete</span>
+					                         </div>
+					                         <span class="progress-type">gvSIG</span>
+					                         <span class="progress-completed">40%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                   </ul>
+					 				<!-- /Skils List -->
+
+					 				 <!-- Subtitle -->
+					 	          	<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+					 	          	<!-- /Subtitle -->
+
+					 				<!-- Skils List -->
+					 				<ul class="skills-list">
+															<!-- item-list -->
+																<li>
+																	<div class="progress">
+																		<div class="progress-bar progress-bar-3" data-percent="50%" role="progressbar" style="width: 50%;">
+																				<span class="sr-only">50% Complete</span>
+																		</div>
+																		<span class="progress-type">Python</span>
+																		<span class="progress-completed">50%</span>
+																	</div>
+																</li>
+															 <!-- /item list -->
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress">
+					                         <div class="progress-bar" data-percent="30%" role="progressbar" style="width: 30%;">
+					                             <span class="sr-only">30% Complete</span>
+					                         </div>
+					                         <span class="progress-type">HTML5 / CSS3</span>
+					                         <span class="progress-completed">30%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+					                     <!-- item-list -->
+					                     <li>
+					                       <div class="progress">
+					                         <div class="progress-bar progress-bar-2" data-percent="30%" role="progressbar" style="width: 30%;">
+					                             <span class="sr-only">30% Complete</span>
+					                         </div>
+					                         <span class="progress-type">Javascript</span>
+					                         <span class="progress-completed">30%</span>
+					                       </div>
+					                     </li>
+					                     <!-- /item list -->
+
+					                   </ul>
+					 				<!-- /Skils List -->
+
+					 		<!-- /SECTION: SKILLS  -->
+
+					</div> <!-- main-col end -->
+
+    		  </div>
+			</div><!-- End skills -->
+			<p class="scrolldown">
+				 <a class="smoothscroll" href="#works"><i class="icon-down-circle"></i></a>
+			</p>
+   </section> <!-- Resume Section End-->
+
+
+	    <!-- works Section
+	    ================================================== -->
+	    <section id="works">
+
+	       <div class="row">
+
+	          <div class="twelve columns collapsed">
+
+	             <h1>Check Out Some of My Works.</h1>
+
+	          </div>
+						
+	       </div> <!-- row End -->
+				 <p class="scrolldown">
+				 	 <a class="smoothscroll" href="#recommendations"><i class="icon-down-circle"></i></a>
+				 </p>
+
+	    </section> <!-- works Section End-->
+
+
+   <!-- recommendations Section
+   ================================================== -->
+   <section id="recommendations">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Recommendations</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Andrea ha trabajado en TALHER desde el verano de 2014 y debo informar que ha demostrado ser
+																una persona responsable y eficiente, con iniciativa y gran solvencia técnica en todos los aspectos
+																aplicables a la redacción de documentos técnicos. Igualmente, dispone de una alta cualificación en el
+																manejo de programas informáticos técnicos, como ARCGIS, Autocad, etc,… y gran facilidad para el
+																aprendizaje. La considero una persona con altas cualidades para el trabajo técnico, que desenvuelve su labor con
+																agrado, iniciativa e ingenio.
+                           </p>
+                           <cite>José Manuel Garrido Palma. Técnico de TALHER.</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Andrea ha trabajado en TALHER desde el verano de 2014 y debo informar que ha demostrado ser
+																una persona responsable y eficiente, con iniciativa y gran solvencia técnica en todos los aspectos
+																aplicables a la redacción de documentos técnicos. Igualmente, dispone de una alta cualificación en el
+																manejo de programas informáticos técnicos, como ARCGIS, Autocad, etc,… y gran facilidad para el
+																aprendizaje. La considero una persona con altas cualidades para el trabajo técnico, que desenvuelve su labor con
+																agrado, iniciativa e ingenio.
+                           </p>
+                           <cite>José Manuel Garrido Palma. Ingeniero Jefe de TALHER.</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+						<div class="thirteen columns header-col">
+
+							 <h2><span></span></h2>
+
+						</div>
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+			 <p class="scrolldown">
+				 <a class="smoothscroll" href="#contact"><i class="icon-down-circle"></i></a>
+			 </p>
+   </section> <!-- recommendations Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Looking forward to answering your email
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="2" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">SEND</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error </div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Andrea Martín Rodríguez<br>
+						   Laurel Street <br>
+						   Madrid, CD 28005 SPAIN<br>
+						   <span>+034 660 692 026</span>
+					   </p>
+						   </div>
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+							<li><a href="https://plus.google.com/u/0/105661020713638173735"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="https://es.linkedin.com/in/anmaro13"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/anmaro13"><i class="fa fa-github"></i></a></li>
+							<li><a href="mailto:andrmartinro@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li><a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
+
 </html>
