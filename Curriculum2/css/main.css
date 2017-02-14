@@ -1324,6 +1324,32 @@ span.see-more {
   margin-bottom: 20px;
 }
 
+.footer {
+     height: 6.25rem;
+   }
+
+   .embed-container {
+            position: relative;
+            margin-bottom: 20px;
+            height: 0;
+            max-width: 100%;
+          }
+
+    .embed-container iframe, .embed-container object, .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+          }
+
+    small {
+            position: absolute;
+            z-index: 40;
+            bottom: 0;
+            margin-bottom: -15px;
+          }
+
 /* ==========================================================
 ! 17. SECTION: Contact
 ========================================================== */
