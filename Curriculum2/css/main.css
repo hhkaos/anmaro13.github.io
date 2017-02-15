@@ -796,7 +796,7 @@ iframe {
   font-weight: bold;
 }
 .testimonial-content {
-  background: url('../img/bgmask2.png') no-repeat center center #08aeac;
+  background:no-repeat center center #08aeac;
   color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -1349,6 +1349,7 @@ span.see-more {
             bottom: 0;
             margin-bottom: -15px;
           }
+
 
 /* ==========================================================
 ! 17. SECTION: Contact
