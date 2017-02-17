@@ -1,4 +1,4 @@
-# Hi, I'm Andrea!
+# Hola, Soy Andrea!
 Enlaces de acceso al Curriculum
 
 * [Primer Curriculum: anmaro13.github.io/Curriculum] (http://anmaro13.github.io/Curriculum)
