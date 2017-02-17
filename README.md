@@ -6,5 +6,5 @@
 
 ## Acknowledgments
 
-* John Rex @ DotRex: [http://dotrex.co/theme-preview/cards/]
-* Styleshout: [http://www.styleshout.com/]
+* John Rex @ DotRex: http://dotrex.co/theme-preview/cards/
+* Styleshout: http://www.styleshout.com/
