@@ -1,5 +1,5 @@
 # Enlaces-Curriculum
 Enlaces de acceso al Curriculum
 
-* [Primer Curriculum: developers.arcgis.com](http://anmaro13.github.io/Curriculum)
-* [Segundo Curriculum : desarrolladores.esri.es](http://anmaro13.github.io/Curriculum2)
+* [Primer Curriculum: Curriculum (http://anmaro13.github.io/Curriculum)
+* [Segundo Curriculum : Curriculum2(http://anmaro13.github.io/Curriculum2)
