@@ -1350,6 +1350,11 @@ span.see-more {
             margin-bottom: -15px;
           }
 
+    iframe{
+          width:300px;
+          height:300px;
+
+          }
 
 /* ==========================================================
 ! 17. SECTION: Contact

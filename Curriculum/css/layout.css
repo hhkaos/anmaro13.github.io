@@ -452,9 +452,9 @@ ul#nav li.current a { color: #F06000; }
 ========================================================== */
 
 #works .button {
-   margin-top: 6px;
+   margin-top: 15px;
    background: #444;
-   color: #21c8bd;
+   color: #F06000;
 }
 #works .button:hover {
    background: #fff;
@@ -575,8 +575,17 @@ span.see-more {
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   margin-bottom: 48px;
+   margin-bottom: 20px;
    color: #95A3A3;
+   margin-top: 30px;
+}
+
+#works h2 {
+   font: 12px/24px 'opensans-semibold';
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   color: #95A3A3;
+
 }
 
 /* works Content */
@@ -1207,6 +1216,7 @@ footer .social-links li:first-child { margin-left: 0; }
           }
 
     .embed-container iframe, .embed-container object, .embed-container iframe {
+            margin-top: 30px;
             position: absolute;
             top: 0;
             left: 0;
