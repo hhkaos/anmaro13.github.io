@@ -31,7 +31,7 @@ $(document).ready(function(){
   $('#loading-wraper').fadeIn(300);
 
 //==============___Testimonials - owl Carousel___================
- $("#testimonial-carousel").owlCarousel({
+ $("#testimonial-carousel, #works-carousel").owlCarousel({
     navigation : false, // Show next and prev buttons
     slideSpeed : 300,
     paginationSpeed : 400,
